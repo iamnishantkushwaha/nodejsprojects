@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "first_name": "Amit",
+    "last_name": "Sharma",
+    "gender": "Male",
+    "email": "amit.sharma@gmail.com"
+  },
+  {
+    "id": 2,
+    "first_name": "Priya",
+    "last_name": "Verma",
+    "gender": "Female",
+    "email": "priya.verma@gmail.com"
+  },
+  {
+    "id": 3,
+    "first_name": "Rahul",
+    "last_name": "Mehta",
+    "gender": "Male",
+    "email": "rahul.mehta@gmail.com"
+  },
+  {
+    "id": 4,
+    "first_name": "Neha",
+    "last_name": "Singh",
+    "gender": "Female",
+    "email": "neha.singh@gmail.com"
+  },
+  {
+    "id": 5,
+    "first_name": "Karan",
+    "last_name": "Patel",
+    "gender": "Male",
+    "email": "karan.patel@gmail.com"
+  }
+]

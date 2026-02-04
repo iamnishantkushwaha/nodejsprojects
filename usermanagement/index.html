@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>User Management Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h2>User Management Dashboard</h2>
+
+  <!-- TOP ACTION BAR -->
+  <div class="top-bar">
+    <button onclick="addnewUsers()">add user</button>
+    <button onclick="getAllUsers()">Show All Users</button>
+
+    <input type="number" id="userIdInput" placeholder="Enter User ID">
+    <button onclick="getUserById()">Get User</button>
+
+  </div>
+
+  <!-- USER TABLE -->
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>First</th>
+        <th>Last</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+
+    <tbody id="userTable"></tbody>
+  </table>
+
+  <!-- EDIT FORM -->
+  <div id="editBox" style="display:none;" class="edit-box">
+
+    <h3>Edit User</h3>
+
+
+
+    <input type="text" id="editFirst" placeholder="First Name">
+    <input type="text" id="editLast" placeholder="Last Name">
+    <input type="text" id="editGender" placeholder="Gender">
+    <input type="email" id="editEmail" placeholder="Email">
+
+    <button onclick="updateUser()">Update</button>
+    <button onclick="closeEdit()">Cancel</button>
+
+  </div>
+
+  <!-- ADD USER FORM -->
+  <div class="add-box" style="display: none;">
+
+    <h3>Add New User</h3>
+    <form onsubmit="addUser(); return false;">
+      <input type="text" id="first_name" placeholder="First Name">
+      <input type="text" id="last_name" placeholder="Last Name">
+      <input type="text" id="gender" placeholder="Gender">
+      <input type="email" id="email" placeholder="Email">
+
+      <button type="button" onclick="addUser()">Add User</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
