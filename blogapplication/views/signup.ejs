@@ -14,7 +14,7 @@
         <div class="card shadow p-4" style="width: 400px;">
             <h3 class="text-center mb-4">Sign Up</h3>
 
-            <form action="/user/signup" method="post" >
+            <form action="/user/signup" method="post" enctype="multipart/form-data" >
 
                 <div class="mb-3">
                     <label for="fullname" class="form-label">Full Name</label>
@@ -31,7 +31,10 @@
                     <label for="Password" class="form-label">Password</label>
                     <input type="password" name="password" class="form-control" id="Password">
                 </div>
-
+                    <div class="mb-3">
+                    <label for="profileimage" class="form-label">upload profile image (optional)</label>
+                    <input type="file" name="profileimageurl" class="form-control" id="profileimage">
+                </div>
                 <button type="submit" class="btn btn-primary w-100">Submit</button>
 
             </form>
